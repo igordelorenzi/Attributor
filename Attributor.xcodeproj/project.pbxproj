@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E0A025618FF034500C733EB /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A025418FF034500C733EB /* FirstViewController.m */; };
+		5E0A025718FF034500C733EB /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E0A025518FF034500C733EB /* FirstViewController.xib */; };
+		5E0A025C18FF05A500C733EB /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A025A18FF05A500C733EB /* SecondViewController.m */; };
+		5E0A025D18FF05A500C733EB /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E0A025B18FF05A500C733EB /* SecondViewController.xib */; };
 		5E41969618FDC6010008EF12 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E41969518FDC6010008EF12 /* Foundation.framework */; };
 		5E41969818FDC6010008EF12 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E41969718FDC6010008EF12 /* CoreGraphics.framework */; };
 		5E41969A18FDC6010008EF12 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E41969918FDC6010008EF12 /* UIKit.framework */; };
@@ -34,6 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5E0A025318FF034500C733EB /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		5E0A025418FF034500C733EB /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		5E0A025518FF034500C733EB /* FirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
+		5E0A025918FF05A500C733EB /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		5E0A025A18FF05A500C733EB /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		5E0A025B18FF05A500C733EB /* SecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
 		5E41969218FDC6010008EF12 /* Attributor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Attributor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E41969518FDC6010008EF12 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5E41969718FDC6010008EF12 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -79,6 +89,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E0A025818FF057D00C733EB /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				5E4196A718FDC6010008EF12 /* Main.storyboard */,
+				5E4196AA18FDC6010008EF12 /* AttributorViewController.h */,
+				5E4196AB18FDC6010008EF12 /* AttributorViewController.m */,
+			);
+			name = Example;
+			sourceTree = "<group>";
+		};
 		5E41968918FDC6010008EF12 = {
 			isa = PBXGroup;
 			children = (
@@ -112,9 +132,13 @@
 		5E41969B18FDC6010008EF12 /* Attributor */ = {
 			isa = PBXGroup;
 			children = (
-				5E4196A718FDC6010008EF12 /* Main.storyboard */,
-				5E4196AA18FDC6010008EF12 /* AttributorViewController.h */,
-				5E4196AB18FDC6010008EF12 /* AttributorViewController.m */,
+				5E0A025818FF057D00C733EB /* Example */,
+				5E0A025918FF05A500C733EB /* SecondViewController.h */,
+				5E0A025A18FF05A500C733EB /* SecondViewController.m */,
+				5E0A025B18FF05A500C733EB /* SecondViewController.xib */,
+				5E0A025318FF034500C733EB /* FirstViewController.h */,
+				5E0A025418FF034500C733EB /* FirstViewController.m */,
+				5E0A025518FF034500C733EB /* FirstViewController.xib */,
 				5E4196AD18FDC6010008EF12 /* Images.xcassets */,
 				5E41969C18FDC6010008EF12 /* Supporting Files */,
 			);
@@ -232,6 +256,8 @@
 				5E4196AE18FDC6010008EF12 /* Images.xcassets in Resources */,
 				5E4196A018FDC6010008EF12 /* InfoPlist.strings in Resources */,
 				5E4196A918FDC6010008EF12 /* Main.storyboard in Resources */,
+				5E0A025718FF034500C733EB /* FirstViewController.xib in Resources */,
+				5E0A025D18FF05A500C733EB /* SecondViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,9 +276,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E0A025C18FF05A500C733EB /* SecondViewController.m in Sources */,
 				5E4196A618FDC6010008EF12 /* AttributorAppDelegate.m in Sources */,
 				5E4196AC18FDC6010008EF12 /* AttributorViewController.m in Sources */,
 				5E4196A218FDC6010008EF12 /* main.m in Sources */,
+				5E0A025618FF034500C733EB /* FirstViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +485,7 @@
 				5E4196C618FDC6010008EF12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5E4196C718FDC6010008EF12 /* Build configuration list for PBXNativeTarget "AttributorTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +494,7 @@
 				5E4196C918FDC6010008EF12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
