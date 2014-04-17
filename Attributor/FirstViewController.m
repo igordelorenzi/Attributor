@@ -15,6 +15,8 @@
 
 @implementation FirstViewController
 
+//@synthesize secondViewController;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -27,7 +29,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    self.title = @"Main View";
 }
 
 - (void)didReceiveMemoryWarning
@@ -36,9 +38,9 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)openSecondView {
-    SecondViewController *secondVC = [[SecondViewController alloc] init];
-    [self.navigationController pushViewController:secondVC animated:YES];
+- (IBAction)goToNextView
+{
+    self.secondViewController = [[SecondViewController alloc] init];
+    [self.navigationController pushViewController:self.secondViewController animated:YES];
 }
-
 @end

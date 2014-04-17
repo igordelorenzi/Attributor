@@ -7,6 +7,7 @@
 //
 
 #import "AttributorAppDelegate.h"
+#import "FirstViewController.h"
 
 @implementation AttributorAppDelegate
 
@@ -15,10 +16,12 @@
     CGRect viewRect = [[UIScreen mainScreen] bounds];
     self.window = [[UIWindow alloc] initWithFrame:viewRect];
     
-    self.firstVC = [[FirstViewController alloc] init];
-    self.navController = [[UINavigationController alloc]
+    self.firstVC = [[FirstViewController alloc]
+                    initWithNibName:@"FirstViewController"
+                    bundle:nil];
+    self.rootController = [[UINavigationController alloc]
                           initWithRootViewController:self.firstVC];
-    self.window.rootViewController = self.navController;
+    self.window.rootViewController = self.rootController;
     
     [self.window makeKeyAndVisible];
     

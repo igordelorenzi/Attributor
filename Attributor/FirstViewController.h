@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@class SecondViewController;
+
 @interface FirstViewController : UIViewController
+
+@property (nonatomic, strong) SecondViewController *secondViewController;
+
+- (IBAction)goToNextView;
 
 @end
